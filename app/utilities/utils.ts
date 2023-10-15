@@ -169,7 +169,7 @@ export interface ClassData{
   class_teacher: string;
 }
 export const getClass= async()=>{
-  const url = '/api/get-class';
+  const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/grades/grades';
   try{
       const response = await fetch(url);
       const result = await response.json();
@@ -181,7 +181,7 @@ export const getClass= async()=>{
 }
 
 export const postClass = async (classData: ClassData): Promise<Response> => {
-  const url = '/api/add-class';
+  const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/grades/add_class/';
   try {
     const response = await fetch(url, {
       method: "POST",
