@@ -166,7 +166,7 @@ export const addSubject = async (subjectData: SubjectData): Promise<any> => {
 
 export interface ClassData{
   grade_name: string;
-  class_teacher: string;
+  class_teacher: number;
 }
 export const getClass= async()=>{
   const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/grades/grades';
