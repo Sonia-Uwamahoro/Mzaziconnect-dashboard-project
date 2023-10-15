@@ -199,9 +199,7 @@ export const postClass = async (classData: ClassData): Promise<Response> => {
     throw new Error("Failed to add class");
   }
 };
-
 export type { SubjectData, StudentData };
-
 
 interface UsersData {
   school_name: string;
