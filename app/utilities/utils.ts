@@ -71,7 +71,6 @@ import { SubjectData } from "../hooks/usePostSubject";
       throw new Error(error.message || "Failed to add teacher");
     }
   }
-
   export const getParent= async()=>{
     const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/account/schools/2/parents/register/';
     try{
@@ -132,9 +131,7 @@ export const postLogin = async (formData: FormData) => {
     console.error('Error during login:', error);
     throw error; 
   }
-};
-
-  
+};  
 export const getSubject= async()=>{
   const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/subjects/subjectsList/';
   try{
