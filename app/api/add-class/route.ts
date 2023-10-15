@@ -8,7 +8,7 @@ export async function POST(request: Request) {
       });
     }
     const posts = await request.json().then(async (response) => {
-      const result = await fetch(`${BASE_URL}grades/add_class/`, {
+      const result = await fetch(`${BASE_URL}/grades/add_class/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
