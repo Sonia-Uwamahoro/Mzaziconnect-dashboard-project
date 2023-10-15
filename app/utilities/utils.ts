@@ -2,7 +2,7 @@ import { StudentData } from "../hooks/usePostStudent";
 import { SubjectData } from "../hooks/usePostSubject";
 
  export const getStudent= async()=>{
-    const url = `https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/students/students/`;
+    const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/students/students/';
 
     try{
         const response = await fetch(url);
@@ -14,7 +14,7 @@ import { SubjectData } from "../hooks/usePostSubject";
     }
  }
   export const addStudent = async (studentData: StudentData): Promise<any> => {
-    const url = `https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/students/add_student/`; 
+    const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/students/add_student/'; 
   
     try {
       const response = await fetch(url, {
@@ -172,7 +172,7 @@ export interface ClassData{
   class_teacher: string;
 }
 export const getClass= async()=>{
-  const url = 'https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/grades/grades/';
+  const url = '/api/get-class';
   try{
       const response = await fetch(url);
       const result = await response.json();
@@ -184,7 +184,7 @@ export const getClass= async()=>{
 }
 
 export const postClass = async (classData: ClassData): Promise<Response> => {
-  const url = "https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/grades/add_class/";
+  const url = '/api/add-class';
   try {
     const response = await fetch(url, {
       method: "POST",
@@ -219,7 +219,7 @@ interface UsersData {
   confirm_password: string;
 }
 export const createUser = async (userData: UsersData) => {
-  const url = `https://sakigake-backend-ecc1b0d1bf4d.herokuapp.com/account/schools/signup/registered`;
+  const url = '/api/create-user';;
   try {
     const response = await fetch(url, {
       method: 'POST',
