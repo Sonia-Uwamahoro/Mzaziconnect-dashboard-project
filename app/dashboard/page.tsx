@@ -103,7 +103,7 @@ const Display = () => {
             <div >
             <div className="flex flex-col rounded-2xl sm:flex-row mt-0  bg-bgblue rounded-0 mt-40">
                 <div className="w-full sm:w-3/6">
-                    <h1 className="text-white p-10 leading-relaxed text-4xl font-bold ">Welcome to Utawala Primary <br /> School Dashboard</h1>
+                    <h1 className="text-white p-10 leading-relaxed text-4xl font-bold ">Welcome to Bicham Primary <br /> School Dashboard</h1>
                     <p className="text-lightblue text-large px-8 -mt-4 ">Track your school activities in one place</p>
                 </div>
                 <div className="w-1/2 sm:w-full md:w-1/2 md:float-right">
