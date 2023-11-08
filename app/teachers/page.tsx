@@ -99,7 +99,7 @@ const handlePhoneNumberChange = (e: ChangeEvent<HTMLInputElement>) => {
         </button>
       </div>
       <div className="mb-6 pt-24">
-        <SearchBar searchInput={searchInput} setSearchInput={setSearchInput} placeholder="Search for a teacher by First Name ..."/>
+        <SearchBar searchInput={searchInput} setSearchInput={setSearchInput} placeholder="Search for a teacher by first name ..."/>
       </div>
       {showForm && (
         <div className="fixed inset-0 flex items-center justify-center">
